@@ -1,5 +1,25 @@
+<!-- Unordered list to display presidents names -->
 <ul>
     <li *ngFor="let president of presidents">
-        {{ president.name + " " + president.term}}
+        {{ president }}
     </li>
 </ul>
+
+<!-- Unordered list to display presidents names and term -->
+<ul>
+    <li *ngFor="let president of presidents2">
+        {{president.name + " " + president.term}}
+    </li>
+</ul>
+
+<!-- Newer for to display presidents names -->
+@for (name of presidents; track name) {
+    <li>{{name}}</li>
+}
+
+<br>
+
+<!-- Newer for to display presidents names and terms -->
+@for (pres of presidents2; track pres) {
+    <li>{{pres.name}}, {{pres.term}}</li>
+}

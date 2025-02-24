@@ -8,7 +8,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-  presidents: any[] =
+  presidents: string[] = ["Higgins", "McAleese", "Robinson", "Hillery"];
+
+  presidents2: any[] =
   [{name: "Higgins", term:"2011-"},
   {name: "McAleese", term:"1997-2011"},
   {name: "Robinson", term:"1990-1997"},
